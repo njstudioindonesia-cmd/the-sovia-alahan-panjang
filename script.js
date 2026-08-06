@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 2. Editorial Parallax
-    const heroBg = document.querySelector('.hero-bg');
+    const heroBg = document.querySelector('.hero-bg-video');
     window.addEventListener('scroll', () => {
         const scroll = window.scrollY;
         if (scroll < window.innerHeight && heroBg) {
