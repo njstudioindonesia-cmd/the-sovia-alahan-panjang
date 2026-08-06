@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sovia | Luxury Retreat in Alahan Panjang</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Background Orbs -->
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+
+    <!-- Modern Nav -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand">
+                <span class="brand-title">The Sovia</span>
+                <span class="brand-subtitle">Alahan Panjang</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-item">Tentang</a>
+                <a href="#rooms" class="nav-item">Kamar</a>
+                <a href="#explore" class="nav-item">Eksplorasi</a>
+                <a href="#gallery" class="nav-item">Galeri</a>
+                <a href="#reviews" class="nav-item">Ulasan</a>
+            </nav>
+            <a href="https://wa.me/6281230445937" target="_blank" class="btn btn-primary nav-cta">Pesan Sekarang</a>
+            <button class="mobile-toggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-image-wrapper">
+            <div class="hero-bg" style="background-image: url('assets/images/hero.jpg');"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="rating-badge reveal-up">
+                <div class="stars">★★★★★</div>
+                <span>4.7 Rating (1.594 Ulasan)</span>
+            </div>
+            <h1 class="hero-title reveal-up" style="transition-delay: 0.1s;">
+                Menyatu dengan <em>Alam</em>,<br>
+                Merangkul <em>Tradisi</em>.
+            </h1>
+            <p class="hero-desc reveal-up" style="transition-delay: 0.2s;">
+                Temukan kemewahan dan ketenangan di jantung Lembah Gumanti. Arsitektur otentik Minangkabau yang berpadu dengan pemandangan pegunungan yang menakjubkan.
+            </p>
+            <div class="hero-actions reveal-up" style="transition-delay: 0.3s;">
+                <a href="https://wa.me/6281230445937" target="_blank" class="btn btn-primary btn-lg">Booking via WhatsApp</a>
+                <a href="#rooms" class="btn btn-glass btn-lg">Lihat Kamar</a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container about-grid">
+            <div class="about-visuals reveal-left">
+                <div class="visual-main">
+                    <img src="assets/images/about.jpg" alt="Lobby The Sovia" loading="lazy">
+                </div>
+                <div class="visual-accent glass-panel">
+                    <div class="accent-number">1K+</div>
+                    <div class="accent-text">Tamu Bahagia<br>Tahun Ini</div>
+                </div>
+            </div>
+            <div class="about-text reveal-right">
+                <h2 class="section-title">Harmoni Sempurna di <em>Dataran Tinggi</em></h2>
+                <p class="section-desc">
+                    Berlokasi di kawasan sejuk Alahan Panjang, The Sovia menawarkan pelarian sempurna dari hiruk pikuk kota. Dikelilingi perbukitan hijau, penginapan kami memadukan pesona arsitektur rumah adat beratap merah dengan kenyamanan modern kelas atas.
+                </p>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <span class="feature-icon">⛰️</span>
+                        <div>
+                            <h4>Udara Sejuk Pegunungan</h4>
+                            <p>Kesejukan alami lembah Gumanti.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✨</span>
+                        <div>
+                            <h4>Arsitektur Ikonik</h4>
+                            <p>Nuansa etnik Minang yang mewah.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section (Bento Layout) -->
+    <section id="rooms" class="section bg-soft">
+        <div class="container">
+            <div class="section-header center reveal-up">
+                <h2 class="section-title">Kamar & <em>Fasilitas</em></h2>
+                <p class="section-desc">Kenyamanan yang disesuaikan untuk setiap momen spesial Anda.</p>
+            </div>
+            
+            <div class="bento-grid">
+                <!-- Deluxe Room (Large) -->
+                <div class="bento-item room-large reveal-up">
+                    <img src="https://picsum.photos/seed/deluxe/1200/800" alt="Deluxe Room" class="bento-bg" loading="lazy">
+                    <div class="bento-overlay"></div>
+                    <div class="tag-featured">Paling Populer</div>
+                    <div class="bento-content">
+                        <h3>Deluxe Room</h3>
+                        <p>Pemandangan eksklusif bukit hijau dengan balkon pribadi dan Smart TV.</p>
+                        <div class="room-meta">
+                            <span class="price">Rp 550.000<small>/malam</small></span>
+                            <a href="https://wa.me/6281230445937?text=Halo%20The%20Sovia,%20saya%20ingin%20bertanya%20tentang%20Deluxe%20Room." class="btn btn-primary">Pesan</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Standard Room -->
+                <div class="bento-item room-small reveal-up" style="transition-delay: 0.1s;">
+                    <img src="assets/images/room.jpg" alt="Standard Room" class="bento-bg" loading="lazy">
+                    <div class="bento-overlay"></div>
+                    <div class="bento-content">
+                        <h3>Standard Room</h3>
+                        <p>Kenyamanan esensial dengan Queen Bed.</p>
+                        <div class="room-meta">
+                            <span class="price">Rp 350.000<small>/malam</small></span>
+                            <a href="https://wa.me/6281230445937?text=Halo%20The%20Sovia,%20saya%20ingin%20bertanya%20tentang%20Standard%20Room." class="btn btn-glass btn-icon">↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Family Suite -->
+                <div class="bento-item room-small reveal-up" style="transition-delay: 0.2s;">
+                    <img src="https://picsum.photos/seed/family/800/600" alt="Family Suite" class="bento-bg" loading="lazy">
+                    <div class="bento-overlay"></div>
+                    <div class="bento-content">
+                        <h3>Family Suite</h3>
+                        <p>Ruang luas dengan 2 King Bed & Ruang Tamu.</p>
+                        <div class="room-meta">
+                            <span class="price">Rp 950.000<small>/malam</small></span>
+                            <a href="https://wa.me/6281230445937?text=Halo%20The%20Sovia,%20saya%20ingin%20bertanya%20tentang%20Family%20Suite." class="btn btn-glass btn-icon">↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Section (Horizontal Scroll Feel) -->
+    <section id="explore" class="section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Eksplorasi <em>Sekitar</em></h2>
+                <p class="section-desc">Jelajahi keindahan tersembunyi dan cita rasa otentik Alahan Panjang.</p>
+            </div>
+            
+            <div class="cards-carousel">
+                <div class="attraction-card reveal-up">
+                    <div class="card-img-wrapper">
+                        <img src="https://picsum.photos/seed/wisata1/600/800" alt="Wisata Alam" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Alam</span>
+                        <h4>Wisata Alam Pimpiang</h4>
+                    </div>
+                </div>
+                <div class="attraction-card reveal-up" style="transition-delay: 0.1s;">
+                    <div class="card-img-wrapper">
+                        <img src="https://picsum.photos/seed/wisata2/600/800" alt="Danau" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Panorama</span>
+                        <h4>Danau Ateh</h4>
+                    </div>
+                </div>
+                <div class="attraction-card reveal-up" style="transition-delay: 0.2s;">
+                    <div class="card-img-wrapper">
+                        <img src="https://picsum.photos/seed/kopi/600/800" alt="Kopi" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Kuliner</span>
+                        <h4>Pabrik Kopi Solok Radjo</h4>
+                    </div>
+                </div>
+                <div class="attraction-card reveal-up" style="transition-delay: 0.3s;">
+                    <div class="card-img-wrapper">
+                        <img src="https://picsum.photos/seed/camping/600/800" alt="Camping" loading="lazy">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-cat">Aktivitas</span>
+                        <h4>Batu Batupang Camping</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section (Modern Masonry) -->
+    <section id="gallery" class="section bg-soft">
+        <div class="container">
+            <div class="section-header center reveal-up">
+                <h2 class="section-title">Momen & <em>Kenangan</em></h2>
+            </div>
+            <div class="modern-gallery">
+                <div class="gallery-col">
+                    <img src="assets/images/gallery_lake.jpg" alt="Galeri 1" class="reveal-up" loading="lazy">
+                    <img src="https://picsum.photos/seed/gal4/600/900" alt="Galeri 4" class="reveal-up" loading="lazy">
+                </div>
+                <div class="gallery-col" style="margin-top: 4rem;">
+                    <img src="https://picsum.photos/seed/gal2/600/900" alt="Galeri 2" class="reveal-up" loading="lazy">
+                    <img src="https://picsum.photos/seed/gal5/600/500" alt="Galeri 5" class="reveal-up" loading="lazy">
+                </div>
+                <div class="gallery-col" style="margin-top: -2rem;">
+                    <img src="https://picsum.photos/seed/gal3/600/500" alt="Galeri 3" class="reveal-up" loading="lazy">
+                    <img src="https://picsum.photos/seed/gal6/600/800" alt="Galeri 6" class="reveal-up" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section">
+        <div class="container">
+            <div class="reviews-wrapper glass-panel reveal-up">
+                <div class="review-stats">
+                    <div class="big-score">4.7</div>
+                    <div class="stars">★★★★★</div>
+                    <p>Berbasis 1.594 ulasan memuaskan dari tamu yang menginap.</p>
+                </div>
+                <div class="review-cards">
+                    <div class="review-card">
+                        <p class="quote">"Penginapan sangat mewah dengan sentuhan tradisional. Udara sejuk dan fasilitas luar biasa. Pasti kembali!"</p>
+                        <div class="reviewer">- Bapak Andi</div>
+                    </div>
+                    <div class="review-card">
+                        <p class="quote">"Pemandangan pagi dari kamar benar-benar magis. Pelayanan staf bintang lima."</p>
+                        <div class="reviewer">- Siti Rahma</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact -->
+    <footer class="modern-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand reveal-up">
+                <h3 class="brand-title">The Sovia</h3>
+                <p>Alahan Panjang, Lembah Gumanti,<br>Solok Regency, Sumatera Barat 27371</p>
+                <div class="contact-links">
+                    <a href="tel:081230445937">0812-3044-5937</a>
+                </div>
+            </div>
+            
+            <div class="footer-links reveal-up" style="transition-delay: 0.1s;">
+                <h4>Navigasi</h4>
+                <a href="#about">Tentang Kami</a>
+                <a href="#rooms">Kamar</a>
+                <a href="#explore">Eksplorasi</a>
+                <a href="#gallery">Galeri</a>
+            </div>
+            
+            <div class="footer-map reveal-up" style="transition-delay: 0.2s;">
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.155700778726!2d100.7578!3d-1.077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTrCsDA0JzM3LjIiUyAxMDDCsDQ1JzI4LjEiRQ!5e0!3m2!1sen!2sid!4v1620000000000!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 The Sovia Alahan Panjang. All rights reserved.</p>
+            <div class="socials">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WA -->
+    <a href="https://wa.me/6281230445937" class="floating-wa" target="_blank" aria-label="Chat WhatsApp">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
