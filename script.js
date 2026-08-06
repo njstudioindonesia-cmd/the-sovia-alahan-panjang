@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 2. Editorial Parallax
-    const heroBg = document.querySelector('.video-background');
+    const heroBg = document.querySelector('.hero-bg-video');
     window.addEventListener('scroll', () => {
         const scroll = window.scrollY;
         if (scroll < window.innerHeight && heroBg) {
             // Slow, subtle movement for luxury feel
-            heroBg.style.transform = `translateY(${scroll * 0.25}px)`;
+            heroBg.style.transform = `translateY(${scroll * 0.25}px) scale(1.05)`;
         }
     });
 
