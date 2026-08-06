@@ -1,37 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Navbar Glass Effect
+    // 1. Luxury Nav Scroll
     const navbar = document.getElementById('navbar');
     
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+        if (window.scrollY > 100) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
     });
 
-    // 2. Parallax Hero
+    // 2. Editorial Parallax
     const heroBg = document.querySelector('.hero-bg');
     window.addEventListener('scroll', () => {
         const scroll = window.scrollY;
         if (scroll < window.innerHeight && heroBg) {
-            heroBg.style.transform = `translateY(${scroll * 0.4}px) scale(1.05)`;
+            // Slow, subtle movement for luxury feel
+            heroBg.style.transform = `translateY(${scroll * 0.25}px) scale(1.05)`;
         }
     });
 
-    // 3. Mobile Menu Toggle
-    const mobileToggle = document.querySelector('.mobile-toggle');
-    // For a real app, you'd implement a full screen overlay menu here.
-    mobileToggle.addEventListener('click', () => {
-        alert('Menu Mobile Toggle (Tambahkan overlay menu di sini)');
-    });
-
-    // 4. Scroll Animations (Intersection Observer)
-    const revealElements = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
+    // 3. Slow Reveal Animations (Intersection Observer)
+    const revealElements = document.querySelectorAll('.fade-up, .fade-up-slow');
     
     const appearOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
+        threshold: 0.15,
+        rootMargin: "0px 0px -100px 0px"
     };
 
     const appearOnScroll = new IntersectionObserver(function(entries, observer) {
@@ -48,26 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => {
         appearOnScroll.observe(el);
     });
-
-    // 5. Active Nav Link on Scroll
-    const sections = document.querySelectorAll('section');
-    const navItems = document.querySelectorAll('.nav-links .nav-item');
-
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (pageYOffset >= (sectionTop - 250)) {
-                current = section.getAttribute('id');
-            }
+    
+    // Trigger hero animations on load
+    setTimeout(() => {
+        document.querySelectorAll('.hero-editorial .fade-up-slow').forEach(el => {
+            el.classList.add('is-visible');
         });
-
-        navItems.forEach(item => {
-            item.classList.remove('active');
-            if (item.getAttribute('href') === `#${current}`) {
-                item.classList.add('active');
-            }
-        });
-    });
+    }, 100);
 });
